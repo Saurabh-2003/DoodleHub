@@ -10,7 +10,7 @@ import { BsSuitDiamond } from "react-icons/bs";
 
   return (
     <div  
-    className="flex border-2 border-zinc-600 items-center gap-4 top-2 bg-zinc-700 text-slate-200
+    className="flex border-2 border-zinc-600 items-center gap-4 top-2 max-md:right-2 bg-zinc-700 text-slate-200
      fixed z-[2] px-3 py-2 rounded-lg"
     >
       <AiOutlineSelect
