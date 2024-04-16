@@ -1,14 +1,14 @@
-# DoodleHub
+# 🎨 DoodleHub
 
 Welcome to the DoodleHub! This is a versatile web application built with React, Tailwind CSS, and Rough.js, offering a variety of features for creating beautiful drawings, flowcharts, and diagrams with ease.
 
-## Technologies Used
-- React
-- Tailwind CSS
-- Rough.js
-- JavaScript
+## 🚀 Technologies Used
+- **React**
+- **Tailwind CSS**
+- **Rough.js**
+- **JavaScript**
 
-## Features
+## ✏️ Features
 - **Drawing Tools:** Use pencils, lines, rectangles, diamonds, circles, and text tools to unleash your creativity.
 - **Draw and Move:** Click and drag on the canvas to draw shapes. Move elements around by selecting and dragging them to a new spot. Resize shapes by dragging their corners.
 - **Edit Text:** Double-click on text elements to edit them directly on the canvas.
@@ -20,14 +20,14 @@ Welcome to the DoodleHub! This is a versatile web application built with React, 
 - **Eraser:** Remove shapes from the canvas by clicking on them with the eraser tool.
 - **Pan:** Hold the Space bar and drag or use the middle mouse button to move around the canvas.
 
-## Shortcuts
-- **Canvas Navigation:** Press the Space bar and drag or use the middle mouse button.
-- **Undo:** Ctrl + Z
-- **Redo:** Ctrl + Y or Ctrl + Shift + Z
-- **Zoom In:** Ctrl + Plus
-- **Zoom Out:** Ctrl + Minus
+## 🚀 Shortcuts
+- **Canvas Navigation:** Press the <kbd>Space</kbd> bar and drag or use the middle mouse button.
+- **Undo:** <kbd>Ctrl</kbd> + <kbd>Z</kbd> 🔙
+- **Redo:** <kbd>Ctrl</kbd> + <kbd>Y</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> 🔁
+- **Zoom In:** <kbd>Ctrl</kbd> + <kbd>Plus</kbd> 🔍
+- **Zoom Out:** <kbd>Ctrl</kbd> + <kbd>Minus</kbd> 🔍
 
-## Learning Process
+## 🔥 Learning Process
 - Started with creating shapes using canvas API, then switched to Rough.js for hand-drawn effects.
 - Implemented mouse events for rendering shapes and enabling user interaction.
 - Added features like move, resize, undo/redo, text editing, pan, and zoom.
@@ -35,7 +35,7 @@ Welcome to the DoodleHub! This is a versatile web application built with React, 
 - Learned about React hooks, deep diving into functions, and advanced event handling.
 - Improved logical thinking, accuracy in measurements, and understanding of drawing points.
 
-## Improvement Ideas
+## 🌟 Improvement Ideas
 - Collaboration feature for multiple users to work on the same canvas.
 - Secure database integration for storing canvas files.
 - Utilize socket.io for real-time collaboration and cursor visibility.
@@ -43,11 +43,16 @@ Welcome to the DoodleHub! This is a versatile web application built with React, 
 - Add keyboard shortcuts for faster interaction.
 - Introduce additional themes and text customization options.
 
-## Running the Project
+## 💻 Running the Project
 To run the project locally:
 1. Clone the repository to your machine.
 2. Run `npm install` or `yarn` to install dependencies.
 3. Run `npm run start` or `yarn start` to start the development server.
-4. Open http://localhost:5173 in your web browser to view the app.
+4. Open http://localhost:3000 in your web browser to view the app.
 
 Enjoy creating amazing drawings with the DoodleHub!
+
+![DoodleHub Hero Section](https://github.com/Saurabh-2003/DoodleHub/home.png)
+![DoodleHub Features Section](https://github.com/yourusername/yourrepository/features.png)
+![DoodleHub Canvas Page](https://github.com/yourusername/yourrepository/canvas.png)
+
