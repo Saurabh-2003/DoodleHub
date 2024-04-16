@@ -1,7 +1,7 @@
 // useTextInput.js
+import { updateElement } from "../utils";
 
-const useTextInput = ({ selectedElement, updateElement, setAction, setSelectedElement }) => {
-
+export const useTextInput = ({ selectedElement, color, elements, setElements, setAction, setSelectedElement }) => {
 
   const AddTextToCanvas = event => {
     if (selectedElement) {
@@ -12,13 +12,12 @@ const useTextInput = ({ selectedElement, updateElement, setAction, setSelectedEl
 
       setAction("none");
       setSelectedElement(null);
-      updateElement(id, x1, y1, x2, y2, type, { text: event.target.value });
+      updateElement(elements, setElements,id, x1, y1, x2, y2, type, color, { text: event.target.value });
     } else {
       console.error("No element selected when handleBlur was called");
     }
   };
 
-  return {  AddTextToCanvas };
+  return { AddTextToCanvas };
 };
 
-export default useTextInput;

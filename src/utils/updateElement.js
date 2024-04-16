@@ -1,8 +1,9 @@
+// updateElement.js
 import { createElement } from "./createElement";
 
-export const updateElement = ({id, x1, y1, x2, y2, type, options, elements, setElements, color}) => {
+export const updateElement = (elements, setElements, id, x1, y1, x2, y2, type, color, options) => {
   const elementsCopy = [...elements];
-  const c = elementsCopy[id].coll ? elementsCopy[id].coll : color
+  const c = elementsCopy[id].coll ? elementsCopy[id].coll : color;
   switch (type) {
     case "line":
     case "rectangle":
@@ -10,14 +11,14 @@ export const updateElement = ({id, x1, y1, x2, y2, type, options, elements, setE
       elementsCopy[id] = createElement(id, x1, y1, x2, y2, type, c);
       break;
     case "pencil":
-      elementsCopy[id].coll = c
+      elementsCopy[id].coll = c;
       elementsCopy[id].points = [...elementsCopy[id].points, { x: x2, y: y2 }];
       break;
     case "circle":
-        elementsCopy[id] = createElement(id, x1, y1, x2, y2, type, c);
-        break;
+      elementsCopy[id] = createElement(id, x1, y1, x2, y2, type, c);
+      break;
     case "text":
-      elementsCopy[id].coll = c
+      elementsCopy[id].coll = c;
       const textWidth = document
         .getElementById("canvas")
         .getContext("2d")

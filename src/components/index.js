@@ -1,3 +1,6 @@
 export * from './CanvasControls'
 export * from './Menu'
 export * from './Tools'
+export * from './Home'
+export * from './Canvas'
+export * from './NavBar'

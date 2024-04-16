@@ -1,5 +1,5 @@
 // useMouseEvents.js
-import { getElementAtPosition, adjustElementCoordinates, resizedCoordinates, cursorForPosition, createElement } from "../utils/index.js";
+import { getElementAtPosition, adjustElementCoordinates, resizedCoordinates, cursorForPosition, createElement, updateElement } from "../utils/index.js";
 
 const adjustmentRequired = type => ["line", "rectangle", "circle", "polygon"].includes(type);
 
@@ -18,7 +18,7 @@ export const useMouseEvents = ({
   scale,
   scaleOffset,
   setStartPanMousePosition,
-  updateElement
+  color
 }) => {
 
     const getMouseCoordinates = event => {
@@ -113,8 +113,8 @@ export const useMouseEvents = ({
       
         if (action === "drawing") {
           const index = elements.length - 1;
-          const { x1, y1 } = elements[index];
-          updateElement(index, x1, y1, clientX, clientY, tool);
+          const { x1, y1 } = elements[index]; 
+          updateElement(elements, setElements, index, x1, y1, clientX, clientY, tool, color);
         } else if (action === "moving") {
           if (selectedElement.type === "pencil") {
             const newPoints = selectedElement.points.map((_, index) => ({
@@ -138,13 +138,13 @@ export const useMouseEvents = ({
             const options =
               type === "text" && selectedElement.text
                 ? { text: selectedElement.text }
-                : undefined;
-            updateElement(id, newX1, newY1, newX2, newY2, type, options);
+                : undefined;  
+            updateElement(elements, setElements,id, newX1, newY1, newX2, newY2, type, color, options);
           }
         } else if (action === "resizing") {
           const { id, type, position, ...coordinates } = selectedElement;
           const { x1, y1, x2, y2 } = resizedCoordinates(clientX, clientY, position, coordinates);
-          updateElement(id, x1, y1, x2, y2, type);
+          updateElement(elements, setElements,id, x1, y1, x2, y2, type, color);
         }
       };
       
@@ -160,7 +160,7 @@ export const useMouseEvents = ({
             adjustmentRequired(type)
           ) {
             const { x1, y1, x2, y2 } = adjustElementCoordinates(elements[index]);
-            updateElement(id, x1, y1, x2, y2, type);
+            updateElement(elements, setElements, id, x1, y1, x2, y2, type, color);
           }
       
           const offsetX = selectedElement.offsetX || 0;
