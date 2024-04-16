@@ -1,20 +1,8 @@
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Image = () => {
-  // const [gradientCenter, setGradientCenter] = useState({ cx: "50%", cy: "50%" });
 
-  // useEffect(() => {
-  //   if (cardRef.current && cursor.x !== null && cursor.y !== null) {
-  //     const cardRect = cardRef.current.getBoundingClientRect();
-  //     const cxPercentage = (cursor.x / cardRect.width) * 100 - 24;
-  //     const cyPercentage = (cursor.y / cardRect.height) * 100;
-  //     setGradientCenter({
-  //       cx: `${cxPercentage}%`,
-  //       cy: `${cyPercentage}%`,
-  //     });
-  //   }
-  // }, [cursor, cardRef]);
 
   return (
     <svg

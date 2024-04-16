@@ -144,8 +144,8 @@ export const NavBar = () => {
             <div className="flex items-center gap-[2vw]">
               <button
                onClick={() => navigate('/canvas')}
-               className="flex bg-gray-100 font-bold hover:opacity-70 transition duration-300 text-gray-700 py-2 px-4 rounded-md text-sm items-center gap-2">
-                Get Started <FaArrowRightLong />
+               className="flex bg-gray-100 font-bold hover:opacity-70 transition duration-300 group text-gray-700 py-2 px-4 rounded-md text-sm items-center gap-2">
+                Get Started <FaArrowRightLong className='group-hover:translate-x-2 transition-transform duration-300 ease-in-out' />
               </button>
             </div>
        </div>

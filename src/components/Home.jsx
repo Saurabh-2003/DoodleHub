@@ -13,9 +13,9 @@ export const  Home = () => {
             <span>See What's New</span> |
             <span
               className="text-blue-400 flex gap-2 items-center"
-            > AI Diagrams <FaChevronRight size={12}/></span></button>
+            > Diagrams <FaChevronRight size={12}/></span></button>
           <h1 className="text-7xl flex flex-col text-center text-slate-800 dark:text-stone-200 font-extrabold">
-            <span className="text-[#5356ff]">DoodleVerse</span> 
+            <span className="text-[#5356ff]">DoodleHub</span> 
             <span>Where Creativity Runs Wild!</span>
           </h1>
 
@@ -25,8 +25,8 @@ export const  Home = () => {
           </h3>
           <button
             onClick={() => navigate('/canvas')}
-            className="flex font-bold mt-10 bg-gray-100 hover:opacity-70 transition duration-300 py-3 px-6 rounded-md text-sm items-center gap-2">
-            Let's Doodle  <FaArrowRightLong />
+            className="flex group font-bold mt-10 bg-gray-100 hover:opacity-70 transition duration-300 py-3 px-6 rounded-md text-sm items-center gap-2">
+            Let's Doodle  <FaArrowRightLong className='group-hover:translate-x-2 transition-transform duration-300 ease-in-out' />
           </button>
       </section>
         <Features />

@@ -2,10 +2,10 @@ import {CanvasControls, Menu, Tools} from "./index.js";
 import { useMouseEvents,useTextInput,  useAppState, useRenderCanvas, useResizeCanvas, useUndoRedo, usePanFunctionEffect, useTextAreaEffect} 
         from "../hooks/index.js";
 import { GrGithub } from "react-icons/gr";
-
+import {useNavigate} from 'react-router-dom'
 
 export const Canvas = () => {
-
+    const navigate = useNavigate();
     // Customs Hooks for UseEffects and State Variables
     const {elements, setElements, undo, redo, action,setAction,
       tool, setTool, selectedElement, setSelectedElement, panOffset,
@@ -74,6 +74,11 @@ export const Canvas = () => {
         <GrGithub size={30}/> Created by Saurabh      
       </div>
 
+      <button 
+        onClick={() => navigate('/')}
+        className="fixed top-2 right-2 z-[2] bg-zinc-700 text-slate-100 px-4 py-2 rounded-lg hover:opacity-80">
+        Logout
+      </button>
     </main>
   );
 };
