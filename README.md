@@ -52,7 +52,7 @@ To run the project locally:
 
 Enjoy creating amazing drawings with the DoodleHub!
 
-![DoodleHub Hero Section](https://github.com/Saurabh-2003/DoodleHub/home.png)
-![DoodleHub Features Section](https://github.com/yourusername/yourrepository/features.png)
-![DoodleHub Canvas Page](https://github.com/yourusername/yourrepository/canvas.png)
+![DoodleHub Hero Section](https://github.com/Saurabh-2003/DoodleHub/blob/main/home.png)
+![DoodleHub Features Section](https://github.com/Saurabh-2003/DoodleHub/blob/main/features.png)
+![DoodleHub Canvas Page](https://github.com/Saurabh-2003/DoodleHub/blob/main/canvas.png)
 
