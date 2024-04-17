@@ -35,7 +35,7 @@ export const Canvas = () => {
   
 
   return (
-    <main className="flex select-none justify-center">
+    <main className="flex overscroll-contain select-none justify-center">
 
       <Tools tool={tool} setTool={setTool} />
 

@@ -28,6 +28,7 @@ export const useMouseEvents = ({
   };
 
   const handlePointerDown = event => {
+    
     if (action === "writing") return;
 
     const { clientX, clientY } = getPointerCoordinates(event);
