@@ -14,7 +14,7 @@ export const Canvas = () => {
       color, setColor, canvaRef, canvasSize, setCanvasSize,
       canvasBackground, setCanvasBackground} = useAppState();
 
-    const {handleMouseDown, handleMouseMove, handleMouseUp} 
+    const {handleMouseDown, handleMouseMove, handleMouseUp, handleTouchStart, handleTouchMove, handleTouchEnd} 
               = useMouseEvents({action, tool, elements, setElements,
                 pressedKeys, selectedElement, setSelectedElement,
                 panOffset, setPanOffset, startPanMousePosition,
@@ -65,18 +65,21 @@ export const Canvas = () => {
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         className={`absolute z-[1] ${canvasBackground}`}
       >
         Canvas
       </canvas>
 
-      <div className=" flex gap-2 border-2 border-zinc-600 items-center py-2 px-4 fixed bottom-2 z-[2] right-2 text-slate-300  overflow-hidden bg-zinc-700 rounded-lg">
+      <div className=" max-md:hidden flex gap-2 border-2 border-zinc-600 items-center py-2 px-4 fixed bottom-2 z-[2] right-2 text-slate-300  overflow-hidden bg-zinc-700 rounded-lg">
         <GrGithub size={30}/> Created by Saurabh      
       </div>
 
       <button 
         onClick={() => navigate('/')}
-        className="fixed top-2 right-2 z-[2] bg-zinc-700 text-slate-100 px-4 py-2 rounded-lg hover:opacity-80">
+        className="fixed border border-zinc-500 max-md:px-2 max-md:right-auto max-md:left-2 top-2 right-2 z-[2] bg-zinc-700 text-slate-100 px-4 py-2 rounded-lg hover:opacity-80">
         Logout
       </button>
     </main>

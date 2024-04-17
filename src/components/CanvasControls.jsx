@@ -3,7 +3,7 @@ import { LuMinus, LuPlus } from "react-icons/lu";
 
 export const CanvasControls = ({scale, setScale, undo, redo}) => {
   return (
-    <div className="fixed z-[2] select-none left-2 flex gap-4 bottom-2">
+    <div className="fixed z-[2] max-md:top-2 max-md:right-2 max-md:left-auto max-md:bottom-auto select-none left-2 flex gap-4 bottom-2">
           <div 
             className=" flex gap-2 border-2 border-zinc-600 items-center text-slate-300 overflow-hidden  bg-zinc-700 rounded-lg"
           >
