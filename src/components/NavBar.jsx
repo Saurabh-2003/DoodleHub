@@ -24,7 +24,7 @@ const UseCaseMenu = () => {
             <h5>Express data flow using diagram-as-code</h5>
           </p>
       </div>
-      <div className="flex flex-shrink w-48 flex-col items-start gap-8">
+      <div className="flex max-sm:hidden flex-shrink w-48 flex-col items-start gap-8">
           <h3 className="flex  items-center gap-2">
             <SlDocs className="text-sky-500 bg-sky-600/40 p-[4px] rounded-[4px]" size={24}/> 
             <span className="text-stone-500 font-semibold">Docs</span>
@@ -38,7 +38,7 @@ const UseCaseMenu = () => {
             <h5>Create highly consumable visual docs</h5>
           </p>
       </div>
-      <div className="flex flex-shrink  w-48 flex-col items-start gap-8">
+      <div className="flex max-sm:hidden  flex-shrink  w-48 flex-col items-start gap-8">
           <h3 className="flex items-center gap-2">
             <FiUsers className="text-green-500 bg-green-600/40 p-[4px] rounded-[4px]" size={24}/> 
             <span className="text-stone-500 font-semibold">Collaboration</span>
@@ -59,11 +59,16 @@ const UseCaseMenu = () => {
 
 
 const AboutMenu = () => {
+  
+
   return (
-    <div className="flex flex-col gap-1 hover:[&>button]:bg-white/10 font-semibold w-60 p-6 rounded-xl border border-stone-700 bg-zinc-900">
-      <button className="py-2 px-2 transition duration-300 flex w-full items-center justify-between">Github<FiArrowUpRight /></button>
+    <div className="flex flex-col gap-1 hover:[&>button]:bg-white/10 font-semibold w-60 p-2 rounded-xl border border-stone-700 bg-zinc-900">
+      <a href="https://github.com/Saurabh-2003/DoodleHub" target="_blank" rel="noopener noreferrer" className="py-2 px-2 transition duration-300 flex w-full items-center justify-between">
+        Github<FiArrowUpRight />
+      </a>
     </div>
-  )
+  );
+  
 }
 
 
@@ -90,7 +95,7 @@ export const NavBar = () => {
   };
 
   return (
-        <div className="flex justify-between px-16 text-sm py-4 backdrop-blur-md items-center  text-stone-100">
+        <div className="flex justify-between max-sm:px-2 px-16 text-sm py-4 backdrop-blur-md items-center  text-stone-100">
             <div className="flex gap-[4vw] items-center">
                <h1 className="text-[#5356FF]"><TbScribble size={40}/></h1>
               <div className="flex text-stone-300 items-center gap-[2vw]">

@@ -14,14 +14,14 @@ export const  Home = () => {
             <span
               className="text-blue-400 flex gap-2 items-center"
             > Diagrams <FaChevronRight size={12}/></span></button>
-          <h1 className="text-7xl flex flex-col text-center text-slate-800 dark:text-stone-200 font-extrabold">
+          <h1 className="text-7xl max-sm:text-5xl flex flex-col text-center text-slate-800 dark:text-stone-200 font-extrabold">
             <span className="text-[#5356ff]">DoodleHub</span> 
             <span>Where Creativity Runs Wild!</span>
           </h1>
 
-          <h3 className="mt-10 text-2xl text-center flex flex-col items-center text-slate-300">
-          All-in-one markdown editor, collaborative canvas, 
-          <span>and diagram-as-code builder</span>
+          <h3 className="mt-10 max-sm:text-lg text-2xl text-center flex flex-col items-center text-slate-300">
+            Create stunning diagrams, flowcharts, and more with ease!
+            <span>Unlimited creativity at your fingertips.</span>
           </h3>
           <button
             onClick={() => navigate('/canvas')}

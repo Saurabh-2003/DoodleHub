@@ -8,7 +8,7 @@ const Shapes = () => {
         xmlns="http://www.w3.org/2000/svg" 
         fill="none" viewBox="0 0 31 31" 
         
-        className="size-80 duration-200 transition-all"
+        className="size-80 max-sm:size-60 duration-200 transition-all"
     >
       <defs>
         <radialGradient

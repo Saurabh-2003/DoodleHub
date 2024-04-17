@@ -23,7 +23,7 @@ Welcome to the DoodleHub! This is a versatile web application built with React, 
 ## 🚀 Shortcuts
 - **Canvas Navigation:** Press the <kbd>Space</kbd> bar and drag or use the middle mouse button.
 - **Undo:** <kbd>Ctrl</kbd> + <kbd>Z</kbd> 🔙
-- **Redo:** <kbd>Ctrl</kbd> + <kbd>Y</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> 🔁
+- **Redo:** <kbd>Ctrl</kbd> + <kbd>Y</kbd>  🔁
 - **Zoom In:** <kbd>Ctrl</kbd> + <kbd>Plus</kbd> 🔍
 - **Zoom Out:** <kbd>Ctrl</kbd> + <kbd>Minus</kbd> 🔍
 

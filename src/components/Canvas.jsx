@@ -74,7 +74,9 @@ export const Canvas = () => {
       </canvas>
 
       <div className=" max-md:hidden flex gap-2 border-2 border-zinc-600 items-center py-2 px-4 fixed bottom-2 z-[2] right-2 text-slate-300  overflow-hidden bg-zinc-700 rounded-lg">
-        <GrGithub size={30}/> Created by Saurabh      
+        <GrGithub size={30}/> 
+        <a href="https://github.com/Saurabh-2003/DoodleHub" target="_blank" rel="noopener noreferrer"
+         className="hover:underline cursor-pointer">Created by Saurabh  </a>    
       </div>
 
       <button 
