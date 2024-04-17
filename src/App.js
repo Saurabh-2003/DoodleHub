@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Canvas, Home, NavBar } from './components/index.js';
 import Features from './components/features/Features.jsx';
-
+import './App.css'
 const AppRouter = () => {
   return (
     <Router>
